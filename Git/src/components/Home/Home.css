@@ -1,0 +1,118 @@
+/*
+ * Home css File
+*/
+
+.Home {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  text-align: center;
+  background-image: url('/img/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.scroll-down-svg {
+  position: absolute;
+  bottom: 30px;
+}
+.path_3 {
+  animation: Scroll-fill infinite 1.43s linear;
+}
+.path_2 {
+  animation: Scroll-fill infinite 1.42s linear;
+}
+.path_1 {
+  animation: Scroll-fill infinite 1.41s linear;
+}
+
+.title {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  text-align: right;
+}
+.title h2 {
+  margin-top: 0;
+  text-transform: uppercase;
+  color: yellow;
+  font-size: 100px;
+  font-weight: bold;
+}
+.title p {
+  color: #b341b2;
+  font-size: 80px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+@keyframes Scroll-fill {
+  0% {
+    fill: #fff;
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+    fill: yellow;
+  }
+}
+@media (max-width: 1300px) {
+  .Home {
+    background-size: 100% 100%;
+  }
+}
+@media (max-width: 1200px) {
+  .title p {
+    text-align: center;
+  }
+  .title h2 {
+    font-size: 85px;
+  }
+}
+@media (max-width: 600px) {
+  .Home {
+    background-size: 200% 100%;
+    background-position: right;
+  }
+  .title {
+    text-align: left;
+    margin-left: 30px;
+    width: 100%;
+  }
+  .title h2 {
+    margin-top: -24px;
+  }
+  .title p {
+    text-align: left;
+  }
+}
+@media (max-width: 360px) {
+  .title {
+    margin-left: 0;
+  }
+  .scroll-down-svg {
+    bottom: 50px;
+  }
+  .avatar-wr {
+    align-self: center;
+  }
+  .info-wr p {
+    margin: 7px 0;
+  }
+  .repo:nth-child(2n+1) {
+    margin-right: 0;
+  }
+  .programming-language {
+    margin-top: 15px;
+  }
+  .info__content p {
+    margin-bottom: 0;
+  }
+  .repo {
+    margin: 20px 0;
+  }
+}
